@@ -118,6 +118,9 @@ Each collection _`page`_ should have the following FrontMatter definitions...
 
 ```YAML
 ---
+## Layout may be `default`, `post`, or `page` depending upon theme
+layout: post
+
 title: Title of Page
 date: 2019-07-21 11:42:11 -0300
 #date_updated:  ## Optional and formatted like `date` above
@@ -198,7 +201,7 @@ git add _layouts/feed-atom
 
 
 git commit -F- <<'EOF'
-:heavy_plus_sign: Adds `liquid-utilities/feed-atom` submodule
+:heavy_plus_sign: Adds `liquid-utilities/feed-atom#1` submodule
 
 
 
