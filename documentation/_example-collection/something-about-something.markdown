@@ -1,0 +1,18 @@
+---
+title: Something About Something
+description: Example collection page about something
+date: 2019-07-21 11:42:11 -0300
+time_to_live: 1800
+---
+
+
+This is the content of an example page within an example collection.
+
+
+Check the [Feed Atom][master__feed_atom] repository for quick start on utilizing code from this repository within your own GitHub Pages hosted sites.
+
+
+
+[master__feed_atom]:
+  https://github.com/liquid-utilities/feed-atom
+  "Master branch for this repository"
