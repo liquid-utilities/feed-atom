@@ -11,6 +11,4 @@ Check the Example Collection for links to the feed for Atom readers.
 
 
 
-[master__feed_atom]:
-  https://github.com/liquid-utilities/feed-atom
-  "Master branch for this repository"
+[master__feed_atom]:  https://github.com/liquid-utilities/feed-atom  "Master branch for this repository"

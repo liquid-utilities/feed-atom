@@ -14,6 +14,4 @@ Check the [Feed Atom][master__feed_atom] repository for quick start on utilizing
 
 
 
-[master__feed_atom]:
-  https://github.com/liquid-utilities/feed-atom
-  "Master branch for this repository"
+[master__feed_atom]:  https://github.com/liquid-utilities/feed-atom  "Master branch for this repository"
