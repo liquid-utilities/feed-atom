@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Something About Something
 description: Example collection page about something
 date: 2019-07-21 11:42:11 -0300
