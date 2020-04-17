@@ -113,6 +113,9 @@ permalink: /:collection/:name:output_ext
 ```
 
 
+> Note, an [Atom feed example][feed_atom__gh_pages__rss_feed] file is available within the [`gh-pages`][feed_atom__gh_pages] branch of this repository.
+
+
 Each collection _`page`_ should have the following FrontMatter definitions...
 
 
@@ -138,6 +141,8 @@ time_to_live: 1800
 
 
 > Note, `excerpt` requires `site.show_excerpts` to be non-`false` and **not** setting a `description` for those pages using `excerpt`s
+>
+> An example page [raw source][feed_atom__gh_pages__raw_source__something_about_something] is available within the [`gh-pages`][feed_atom__gh_pages] branch of this repository.
 
 
 Assign `site.url`, either via Jekyll `build`/`serve` command line option or with the following `_config.yml` examples...
@@ -152,6 +157,9 @@ show_excerpts: false
 plugins:
   - jekyll-github-metadata
 ```
+
+
+> Note, a full example [`_config.yml`][feed_atom__gh_pages__config_yml] file is available within the [`gh-pages`][feed_atom__gh_pages] branch of this repository.
 
 
 To enable all features please configure the GitHub MetaData plugin...
@@ -292,6 +300,19 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 [feed_atom__gh_pages]:
   https://github.com/liquid-utilities/feed-atom/tree/gh-pages
   "Source code examples hosted thanks to GitHub Pages!"
+
+
+[feed_atom__gh_pages__config_yml]:
+  https://github.com/liquid-utilities/feed-atom/blob/gh-pages/_config.yml
+  "Example configuration file"
+
+[feed_atom__gh_pages__raw_source__something_about_something]:
+  https://raw.githubusercontent.com/liquid-utilities/feed-atom/gh-pages/documentation/_example-collection/something-about-something.markdown
+  "Raw source code of example post"
+
+[feed_atom__gh_pages__atom_feed]:
+  https://github.com/liquid-utilities/feed-atom/blob/gh-pages/documentation/_example-collection/example-collection.atom
+  "Example RSS feed configuration FrontMatter"
 
 
 
