@@ -1,7 +1,8 @@
 ---
+vim: filetype=liquid
 layout: null
 date_format: '%Y-%m-%dT%T%:z'
-version: 0.0.1
+version: 0.1.0
 license: AGPL-3.0
 author: S0AndS0
 ---
@@ -10,9 +11,11 @@ author: S0AndS0
   {% assign target_collection = site[collection_name] %}
   {% assign collection_content_type = page.content_type | default: target_collection.feeds.atom.content_type %}
 
-  {% unless this_repo %}
+  {% assign this_repo_id = site.repo_id | default: include.repo_id | default: nil %}
+  {% unless this_repo_id %}
     {% assign repo_name = site.github.repository_name %}
     {% assign this_repo = site.github.public_repositories | where: "name", repo_name | first %}
+    {% assign this_repo_id = this_repo.id %}
   {% endunless %}
 
   {% assign this_time_stamp = page.date | date: '%s' %}
@@ -44,7 +47,7 @@ author: S0AndS0
       <entry>
         <title>{{- post.title | xml_escape -}}</title>
         <link rel="alternate" type="text/html" href="{{- post.url | absolute_url -}}" />
-        <id>urn:uuid:{{- this_repo.id -}}-{{- this_time_stamp -}}-{{- post_word_count -}}</id>
+        <id>urn:uuid:{{- this_repo_id -}}-{{- this_time_stamp -}}-{{- post_word_count -}}</id>
         {% comment %}
         <link href="{{- post.url | absolute_url -}}" />
         {% endcomment %}
